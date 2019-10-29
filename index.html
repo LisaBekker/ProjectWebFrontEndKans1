@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dzl0iqg.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="javascript" href="script.js/javascript.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Verhaal</title>
+</head>
+<body >
+<!––dit is de contact balk hier, hier kan de gebruiker zich navigeren naar verschillende kopjes-->
+    <header class="header">
+        <h1 class="logo"> <img src="images/sitelogo.svg"  id="wowairlogo"alt="Avatar">WowAir</h1>
+        <ul class="main-nav">
+            <li><a href="">Home</a></li>
+            <li><a href="#zoeken">Zoeken</a></li>
+            <li><a href="#verhalenoverzicht">Verhalen</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+	</header> 
+    <main>
+    <!––dit is een sectie met een text en een plaatje-->
+        <section class="filtertitel">
+            <img id=" vliegtuigicon" src="images/plane-goed.svg" alt="Avatar" />
+            <h1><b>WOW AIR PRESENTEERT</b><br>
+            EEN VERHALEN COLLECTIE<br>
+            <b>99 SFEERVERHALEN</b><br>
+            WAAR JE LEKKER BIJ KAN WEGDROMEN<br>
+            <b>TIJDENS JE  VAKANTIE OF  ONDERWEG</b> </h1>
+        </section>
+        <!––in deze sectie worden de polulairste verhalen getoond doormiddel van een slideshow-->
+        <section class="slideshow-container">
+            <h2>Meest bekeken verhalen</h2>
+            <aside class="mySlides fade">
+                <img src="images/173f977f-e2ac-44eb-8deb-76e76a966e8c.JPG"  alt="img1">
+            </aside>
+            <aside class="mySlides fade">   
+                <img src="images/verhaal%20poepen%20titel.svg"  alt="img2">
+            </aside>
+            <aside class="mySlides fade">
+                <img src="images/20ece343-5d9e-4ce4-a7d0-06842d791d32.JPG"  alt="img3">
+            </aside>
+        </section>      
+        <section class="container" id="zoeken"> 
+        <h2>ZOEK EEN VERHAAL</h2>
+        <!––dit is de formulier, hier kan de gebruiker zoeken en filteren-->
+            <form>
+              <fieldset>
+              <ul class="flex-outer">
+              <li>
+                <input type="text" id="zoeken" placeholder="Zoek" required>
+              </li>
+                <li>
+                  <legend for="Genre">Genre</legend>
+                    <select id="genre"required>
+                        <option value="" disabled selected>Genre</option>
+                        <option value="vrolijk">Vrolijk (12)</option>
+                        <option value="ontstpannen">Ontspannen</option>
+                        <option value="boos">Boos</option>
+                        <option value="spanning">Spanning</option>
+                    </select>
+                </li>
+                <li>
+                  <legend for="Schrijver">Schrijver</legend>
+                  <input type="text" id="schrijver" placeholder="schrijver" required>
+                </li>
+                <li>
+                  <legend for="Uitgave datum">Uitgave datum</legend>
+                  <input id="date"type="date"required>
+                </li>
+                <li>
+                    <p>Leesduur</p>
+                    <ul class="flex-inner">
+                      <li>
+                        <input type="checkbox" id="zero-to-five">
+                        <label for="zero-to-five">0-5</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="five-to-tene">
+                        <label for="five-to-ten">5-10</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="ten-to-fifteen">
+                        <label for="ten-to-fifteen">10-15</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="fifteen-to-twenty">
+                        <label for="fifteen-to-twenty">15-20</label>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button type="submit">Zoeken</button>
+                  </li>
+                </ul>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!––dit is de verhalensectie, hier staan alle verhalen -->
+        <section class="verhalenoverzicht" id="verhalenoverzicht">
+            <aside class="card">
+                  <img src="images/173f977f-e2ac-44eb-8deb-76e76a966e8c.JPG" alt="Avatar">
+                  <article class="container1">
+                    <p><b>Droom</b></p>         
+                    <p>Leesduur: 10 minuten</p>
+                    <img src="images/download-iconweb.svg" alt="Avatar"  id="imgClickAndChange" >
+                  </article>
+            </aside>
+            <aside class="card">
+            <a href="Verhaalpagina.html" >
+                <img src="images/verhaal%20poepen%20titel.svg" alt="Avatar" > </a>
+                  <article class="container1">
+                    <p><b>Droom</b></p>                     
+                    <p>Leesduur: 10 minuten</p>
+                    <img src="images/download-iconweb.svg" alt="Avatar" >
+                  </article>
+            </aside>
+            <aside class="card">
+                  <img src="images/173f977f-e2ac-44eb-8deb-76e76a966e8c.JPG" alt="Avatar">
+                  <article class="container1">
+                    <p><b>Droom</b></p> 
+                      <p>Leesduur: 10 minuten</p>
+                    <img src="images/download-iconweb.svg" alt="Avatar" >
+                  </article>
+            </aside>
+            <aside class="card">
+                  <img src="images/20ece343-5d9e-4ce4-a7d0-06842d791d32.JPG" alt="Avatar">
+                  <article class="container1">
+                    <p><b>Droom</b></p>  
+                      <p>Leesduur: 10 minuten</p>
+                    <img src="images/download-iconweb.svg" alt="Avatar" >
+                  </article>
+            </aside>
+            <aside class="card">
+                  <img src="images/51df47f9-fde9-43b8-bfc7-64fcf057862c.JPG" alt="Avatar">
+                  <article class="container1">
+                    <p><b>Droom</b></p>
+                    <p>Leesduur: 10 minuten</p>
+                    <img src="images/download-iconweb.svg" alt="Avatar" >
+                  </article>
+            </aside>
+            <aside class="card">
+                  <img src="images/20ece343-5d9e-4ce4-a7d0-06842d791d32.JPG" alt="Avatar">
+                  <article class="container1">
+                      <p><b>Droom</b></p>
+                      <p>Leesduur: 10 minuten</p>
+                    <img src="images/download-iconweb.svg" alt="Avatar" >
+                  </article>
+            </aside>
+            <aside class="card">
+                  <img src="images/20ece343-5d9e-4ce4-a7d0-06842d791d32.JPG" alt="Avatar">
+                  <article class="container1">
+                    <p><b>Droom</b></p>
+                    <p>Leesduur: 10 minuten</p>
+                    <img src="images/download-iconweb.svg" alt="Avatar" >
+                  </article>
+            </aside>
+            <aside class="card">
+                  <img src="images/20ece343-5d9e-4ce4-a7d0-06842d791d32.JPG" alt="Avatar">
+                  <article class="container1">
+                    <p><b>Droom</b></p>
+                    <p>Leesduur: 10 minuten</p>
+                    <img src="images/download-iconweb.svg" alt="Avatar" >
+                  </article>
+            </aside>
+        </section>
+    <!––dit is de footer, hier wordt de contact informatie gevonden-->
+    <footer id = "footer">
+        <article>
+            <p><span class="span1">Contact informatie</span></p>  
+            <ul>
+                <li><a><i class="fas fa-plane"></i></i> Wowair</a></li>
+                <li><a><i class="fas fa-envelope-open"></i> Wowairinfo@gmail.com</a></li>
+                <li><a> <i class="fas fa-map-marked-alt"></i> Utrecht, lijpstraat 20</a></li>
+            </ul>
+                <br><br><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-linkedin"></i>
+                <br> <span class="span2">Powered by Woerden city<br>&copy; WowAir</span>  
+        </article>
+    </footer>
+</body>
+</html>
+
+<script language="javascript">
+    /* verander het download tekentje in een vinkje */
+    document.getElementById("imgClickAndChange").addEventListener("click", changeImage);
+    function changeImage() 
+    {
+            document.getElementById("imgClickAndChange").src = "images/vinkje.png"; 
+    }
+    
+
+    var slideIndex = 0;
+    showSlides();
+    
+    /* Elke 4,5 seconden verandert het plaatje in de slideshow*/
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1;}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 4500); 
+    }
+</script>

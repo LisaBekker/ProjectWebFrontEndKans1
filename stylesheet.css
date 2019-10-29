@@ -1,0 +1,508 @@
+*{
+    font-family: museo-sans, sans-serif;
+}
+
+body{
+    margin:0px;
+}
+
+/*begin header*/
+
+#wowairlogo
+{
+    height: 2em;
+    width: 2em;
+    margin-top: 0.6em;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;	
+}
+
+.logo a,
+.main-nav a {
+	padding: 1em 1.5em;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	font-size: 1em;
+	color: black;
+}
+
+.main-nav a:hover {
+	color: purple;
+}
+
+.header {
+    text-align: center;
+	border: 1px solid purple;
+	background-color: #F0F8FF;
+	border-radius: 5px;
+}
+
+.deel2tekstverhaal{
+
+    width: 50%;
+    color:black;
+    margin-bottom:2em;
+
+}
+
+#deel3tekstverhaal{
+    width: 50%;
+    color:white;
+    margin-bottom:2em;
+
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	
+	.header {
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;		
+	}
+	
+    .main-nav a {
+    	font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+  .slideshow > img{
+        background-color: pink;
+        height: 10px;
+        width:20em;
+}
+}
+
+
+@media screen and (max-width: 850px) {
+    
+	.deel2tekstverhaal, #deel3tekstverhaal{
+        width:80%;
+    }
+    .flex-outer li select{
+       margin-right:1em;
+    }
+    .flex-outer li input:not([type='checkbox']){
+       margin-right:1em;
+    }
+    .flex-outer li button {
+        margin-right:1em;
+    } 
+}
+
+/*einde header*/
+.filtertitel
+{
+    background-color: #5E165B;
+    height: 12em;
+    width: 100;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.1em;
+    background-image: linear-gradient(to bottom right, #500A5B,#733373,#5E165B);
+    flex: auto;
+    margin-top:1em;
+}
+
+.filtertitel > H1
+{
+    font-family: museo-sans, sans-serif;
+    font-size: 0.8em;
+    text-align: left;
+    margin-top:-4em;
+    margin-left: 9.8em;
+    color: white;
+    font-weight: 100;
+}
+
+.filtertitel >  img
+{
+    height: 4em;
+    width: 4em;
+    margin-top: 3em;
+    margin-left: 2.5em;
+    border-color: none;
+}
+
+.verhalenoverzicht
+{
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.verhaal1 img
+{
+    height:15em;
+    width: 23.8em;
+    border: solid 0.1em;
+    border-color: #88AFAF;
+    margin-left: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+
+}
+
+input{
+    margin-left: 0.9em;
+}
+
+.filter1{
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    background-color: #F2F2F2;
+    height: 10em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.filter1 button{
+    background-color: grey;
+    font-family: museo-sans, sans-serif;
+    font-size: 0.8em;
+    color:white;
+    margin-top: 2em;
+    margin-left: 21.2em;
+    height: 2.3em;
+    width: 6.7em;
+}
+
+.filter1 select{
+    font-family: museo-sans, sans-serif;
+    color: dimgrey;
+    padding:0.2em;
+    margin-left: 2.6em;
+    margin-right: 1.em;
+    height: 2.4em;
+    width: 13.5em;
+    background-color: white;
+    border-color: grey;
+
+}
+
+.text-block {
+     position: absolute;
+     width:9.5em;
+     bottom:-2em;
+     right: 13em;
+     background-color: black;
+     color: dark;
+     height: 2.5em;
+     font-family: museo-sans, sans-serif;
+}
+
+i {
+    float: right;
+    padding-right: 0.5em;
+}
+
+.backgroundverhaal{
+    background-image: linear-gradient(  white 10%, black 90%);
+    height: 100%;
+    font-family:'Nanum Pen Script', cursive;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    border: 0px;
+}
+
+.titelverhaal{
+    height: 10em;
+    display:flex;
+    justify-content:center;
+    
+}
+
+.titelverhaal h1{
+    display: flex;
+    font-size: 4em;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.titelverhaal H1:hover + p{
+    display: block;
+}
+
+.titelverhaal p{
+    display: none;
+    font-size: 2.5em;
+    float: right;
+    margin-top: -2em;
+}
+
+#userform{
+    height: 5em;
+}
+
+.card {
+    border: 1px solid Black;
+    transition: 0.3s;
+    width: auto;
+    max-height: 15em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: museo-sans, sans-serif;
+}
+
+.card > a, img{
+    height: 9em;
+    width: 23.8em;
+}
+
+.card article img{
+    margin-left: 19em;
+    height: 2em;
+    width: 2em;
+    margin-top:-2.7em;
+}
+
+.container1 p{
+    margin-top: -0.0em;
+}
+
+.container1 {
+    padding-left:1em;
+}
+
+.downloadtitel{
+    background-color: aqua;
+}
+
+/*begin footer*/
+footer{
+    height:auto;
+    background-color: purple;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-self:center;
+    flex-wrap: wrap;
+}
+
+footer > article{   
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size:1em;
+    color:#fff;
+    text-align: left;
+    align-self:center;
+}
+
+.span1{
+   font-size:2em;
+   
+}
+.span2{
+   font-size:0.6em; 
+}
+
+.footerA{
+    background-color: purple;  
+}
+
+.footerA:hover{
+    background-color: purple;
+}
+/*einde footer*/
+
+ 
+/*formulier*/
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    background-color: #F2F2F2;
+    height:auto;
+  
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+     margin-bottom: 20px;
+}
+
+.flex-outer li label, .flex-outer > li > legend,
+.flex-outer li p {
+     padding: 8px;
+     font-weight: 300;
+     letter-spacing: .09em;
+     text-transform: uppercase;
+}
+
+.flex-outer > li > label,.flex-outer > li > legend,
+.flex-outer li p {
+  flex: 1 0 120px;
+      max-width: 220px;
+}
+
+.flex-outer > li > label + *,.flex-outer > li > legend,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+    margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']) {
+    padding: 15px;
+    border: none;
+}
+
+#zoeken:valid, #schrijver:valid,#date:valid, #genre:valid{
+    background-color: #90ee90;
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+    margin-bottom: 1em;
+}
+
+.flex-inner li {
+    width: 100px;
+}
+
+.flex-outer select{
+    padding: 10px;
+    border: none;
+    height: 3em;
+    width: 13em;
+    background-color: white;
+    margin-left:1em;
+}
+
+.container H2{
+    font-family: museo-sans, sans-serif;
+    color: white;
+    padding:0.2em;
+  
+    margin-left:1em;
+    margin-right:1em;
+    background-color: purple;
+    font-weight: 100;   
+}
+
+/*slideshow*/
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    background-color: #F2F2F2;;
+    width:100%;
+    height: auto;
+    display: flex;
+  
+  align-items: center;
+  flex-direction: column;
+    margin-bottom:1em;
+
+}
+
+.slideshow-container H2{
+    font-family: museo-sans, sans-serif;
+    color: white;
+    padding:0.2em;
+    width:80%;
+    margin-left:1em;
+    margin-right:1em;
+    background-color: purple;
+    font-weight: 100;
+}
+
+/* Fading animation */
+.fade {
+     -webkit-animation: slideshow 5s linear 0s infinite;
+     animation: slideshow 5s linear 0s infinite;
+}
+.active {
+     background-color: #717171;
+}
+
+@-webkit-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0.5;} 
+   91.66% { opacity: 0.2;}
+}
+
+@keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0.5;} 
+   91.66% { opacity: 0.2;}
+}
+
+.mySlides > img{
+    height: 20em;
+    width:40em;
+    margin-bottom: 1em;
+}
